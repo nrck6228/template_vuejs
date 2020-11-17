@@ -1,0 +1,54 @@
+@import 'default/styles';
+
+.request-form-wrapper{
+    position: relative;
+
+    .form-check{
+        padding-top: calc(0.4375rem + 1px);
+        padding-bottom: calc(0.4375rem + 1px);
+    }
+    
+    @include media-breakpoint-up(md){
+        .btn{
+            min-width: 100px;
+        }
+    }
+}
+
+.panel {
+    .panel-heading{
+        background-color: #c82333;
+
+        .panel-title{
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+
+.tab-content{
+    border-top: solid 5px #c82333;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+    background-color: #c82333;
+}
+
+.nav.nav-tabs .nav-item .nav-link:hover{
+    color: #c82333;
+}
+
+.nav.nav-tabs .nav-item .nav-link.active, .nav.nav-tabs .nav-item .nav-link:focus{
+    color: white;
+}
+
+@include media-breakpoint-up(md){
+    .col-form-label{
+        text-align: right;
+
+        .required{
+            color: #c82333;
+        }
+    }
+}
